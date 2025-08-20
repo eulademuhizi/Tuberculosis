@@ -1,0 +1,109 @@
+# TB Surveillance Dashboard - Rwanda
+
+A comprehensive Tuberculosis surveillance dashboard for monitoring TB cases and treatment outcomes in Rwanda.
+
+## Features
+
+- 📈 **Key Performance Indicators**: Track total cured cases, LTBI coverage, and yearly TB incidence
+- 🎯 **Treatment Outcomes**: Monitor cured vs other treatment outcomes with time series analysis
+- ⚠️ **High-Risk Groups**: Analyze TB trends in high-risk populations (prisoners, HIV+, contacts, elderly, children, diabetics, mining workers, refugees)
+- 📋 **TB Notifications**: Track new TB cases and relapse incidents with incidence rates per 100,000 population
+- 👶 **Pediatric Analysis**: Monitor LTBI treatment coverage for contacts under 5 years and TB cases in children under 14
+
+## Live Demo
+
+🚀 **[View Live Dashboard](https://your-app-name.streamlit.app)** *(will be updated after deployment)*
+
+## Installation & Local Development
+
+### Prerequisites
+- Python 3.7+
+- Git
+
+### Setup
+1. Clone this repository:
+```bash
+git clone https://github.com/eulademuhizi/Tuberculosis.git
+cd Tuberculosis
+```
+
+2. Install dependencies:
+```bash
+pip install -r requirements.txt
+```
+
+3. Run the application:
+```bash
+streamlit run main.py
+```
+
+4. Open your browser and navigate to `http://localhost:8501`
+
+## Project Structure
+
+```
+Tuberculosis/
+├── main.py                           # Main Streamlit application
+├── charts.py                         # Chart generation and data processing
+├── requirements.txt                  # Python dependencies
+├── data/
+│   └── Tuberculosis 2023-2024.csv   # TB surveillance dataset
+└── README.md                        # Project documentation
+```
+
+## Data Source
+
+The dashboard uses TB surveillance data from Rwanda's health system (2023-2024), including:
+- Patient demographics and enrollment dates
+- Treatment outcomes and histories
+- High-risk group classifications
+- Contact tracing information
+- LTBI treatment data
+
+## Key Metrics
+
+### Targets
+- **LTBI Coverage**: >90% of eligible children under 5
+- **TB Incidence**: ≤46 per 100,000 population
+
+### Calculated Metrics
+- Total cured cases (with option for cured+completed)
+- LTBI coverage percentage for contacts under 5 years
+- Yearly normalized TB incidence per 100,000 population
+- High-risk group distribution
+- Pediatric TB case analysis
+
+## Technologies Used
+
+- **Frontend**: Streamlit
+- **Data Processing**: Pandas, NumPy
+- **Visualization**: Plotly
+- **Deployment**: Streamlit Community Cloud
+
+## Contributing
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## License
+
+This project is part of Rwanda's TB surveillance system and is intended for public health monitoring purposes.
+
+## Contact
+
+- **Developer**: Eula Demuhizi
+- **GitHub**: [@eulademuhizi](https://github.com/eulademuhizi)
+- **Project Repository**: [https://github.com/eulademuhizi/Tuberculosis](https://github.com/eulademuhizi/Tuberculosis)
+
+## Acknowledgments
+
+- Rwanda Ministry of Health
+- TB surveillance data collection teams
+- Public health monitoring initiatives
+
+---
+
+*Last updated: August 2025*
